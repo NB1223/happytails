@@ -12,7 +12,7 @@ CREATE TABLE Pets (
     Health_status ENUM('Good', 'Fair', 'Poor', 'Needs Vaccination', 'Underweight') NOT NULL,
     Date_of_intake date NOT NULL,
     Adoption_status ENUM('Available', 'Adopted', 'In Review', 'High Demand') DEFAULT 'Available',
-    Pet_weight CHECK(Pet_weight >= 0),
+    Pet_weight int CHECK(Pet_weight >= 0),
     last_update date NOT NULL
 
 );
