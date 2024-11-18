@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom';
 
 import NavbarComponent from './Pages/NavBar.js'; 
 import Home from './Pages/Home.js'; 
+import Health from './Pages/Health.js';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
 
           <Route path="/" element={<Home />} />
+          <Route path="/health" element={<Health />} />
           
           {/* Add other routes as necessary */}
         </Routes>

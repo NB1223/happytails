@@ -11,7 +11,7 @@ function NavbarComponent() {
       <div className="container">
         <nav className="nav">
 
-          <Link to="/courses" className="nav-link">Courses</Link>
+          <Link to="/health" className="nav-link">Update Health</Link>
           <Link to="/about_us" className="nav-link">About Us</Link>
 
         </nav>
