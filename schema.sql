@@ -9,10 +9,10 @@ CREATE TABLE Pets (
     Species varchar(50) NOT NULL,
     Breed varchar(50),
     Age int CHECK(age >= 0),
-    Health_status ENUM('Good', 'Fair', 'Poor', 'Needs Vaccination', 'Underweight'),
+    Health_status ENUM('Good', 'Fair', 'Poor', 'Needs Vaccination', 'Underweight') NOT NULL,
     Date_of_intake date NOT NULL,
     Adoption_status ENUM('Available', 'Adopted', 'In Review', 'High Demand') DEFAULT 'Available',
-    Pet_weight int,
+    Pet_weight CHECK(Pet_weight >= 0),
     last_update date NOT NULL
 
 );
@@ -55,7 +55,7 @@ CREATE TABLE Volunteers (
     Volunteer_name varchar(50) NOT NULL,
     Phone_number char(10) NOT NULL,
     Skills varchar(50) NOT NULL,
-    Vol_availability ENUM('Weekend', 'Weekday', 'Flexible'),
+    Vol_availability ENUM('Weekend', 'Weekday', 'Flexible') NOT NULL,
     Last_assigned_date date DEFAULT NULL
 
 );
