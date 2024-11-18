@@ -8,7 +8,7 @@ function Home() {
     backgroundImage: `url(${BG_image})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    height: '97vh',
+    height: '91vh',
     width: '100%',  // Adjusted width to fit the viewport better
     display: 'flex',
     justifyContent: 'center',
@@ -21,8 +21,7 @@ function Home() {
   return (
     <div style={backgroundImageStyle} className="bg">
       <div className="overlay">
-        <h1 className="heading">WELCOME TO ARMS</h1>
-        <p>Academic Reference Management System.</p>
+        <h1 className="heading">WELCOME TO HAPPYTAILS</h1>
         {/* Remove authentication logic, just show a link to other parts of the site */}
       </div>
     </div>

@@ -1,15 +1,20 @@
 
 .overlay {
 
-    margin-top: -390px;
-    position: relative;
-  }
-  .heading {
-    font-size: 3.5rem;
-    font-weight: lighter;
-    color: black;
+  margin-top: -390px;
+  margin-right: -600px;
+  position: relative;
+}
+.heading {
+  font-size: 3rem;
+  font-weight: lighter;
+  color: rgb(255, 255, 255);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 
-  }
+}
+
+.bg{
+  margin-top: 5px;
+}
 
 
-  
